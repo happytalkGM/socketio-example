@@ -1,0 +1,26 @@
+body {
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 5px;
+    overflow: hidden;
+}
+#messages {
+    box-sizing: border-box;
+    height: calc(100vh - 150px);
+    margin: 5px 0;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    list-style: none;
+    overflow: auto;
+}
+#messages > li {margin: 3px 0; padding: 0;}
+#messages > li > .author {display: inline-block; margin: 0 5px 0 0;}
+#messages > li > .author:after {display: inline-block; float: right; content: ' > ';}
+#messages > li > .message {display: inline-block; margin: 0;}
+#form-send {display: block; box-sizing: border-box;}
+#form-send label {display: none;}
+#form-send #input-message {display: block;  box-sizing: border-box; width: 100%; margin: 5px 0;}
+#form-send button[type=submit] {display: block; float: right;}
